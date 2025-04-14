@@ -1,22 +1,21 @@
 {
     "manifest_version": 3,
-    "name": "react-boilerplate",
-    "description": "react-boilerplate for chrome extension",
+    "name": "Screen Recorder",
+    "description": "recorder",
     "version": "1.0.0",
     "action" : {
         "default_popup": "popup.html",
-        "default_title": "React Boilerplate",
+        "default_title": "Screen Recorder",
         "default_icon" : "icon.png"
     },
    
-    "permissions": [
-    ],
+    "permissions": ["tabs", "scripting", "storage", "desktopCapture"],
     "icons": {
         "16" : "icon.png",
         "48" : "icon.png",
         "128" : "icon.png"
     },
-
+    
     "background": {
         "service_worker": "background.js"
     },
